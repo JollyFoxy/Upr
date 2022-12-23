@@ -5,9 +5,9 @@ public class Main {
         System.out.println(name);
         System.out.println("Длинна имнеи равна: " + name.length());
         if (name.equals("Павел"))
-            System.out.println(1);
+            System.out.println("Привет"+name);
         else
-            System.out.println(0);
+            System.out.println("Привет кто бы ты ни был");
         System.out.print("Перенос\nстроки");
         System.out.println("\tТабуляция");
         System.out.println("Спец смволы\\,\"");
@@ -15,10 +15,10 @@ public class Main {
         String str2 = "строк";
         System.out.println(str1 + str2);
         System.out.println("Замена " + str.replace("одной ноге", "двух ногах"));
-        System.out.println(str.contains("на"));
-        System.out.println(str.startsWith("Прыгать") & str.endsWith("утром"));
-        System.out.println(str.charAt(6));
-        System.out.println(str.indexOf("одной"));
-        System.out.println(str.lastIndexOf("одной"));
+        System.out.println("Нличие подстроки \"на\" в строке "+str.contains("на"));
+        System.out.println("Проверка на то что: строка начинаеться на \"Прыгать\", а заканчиваеться на \"одной\" "+(str.startsWith("Прыгать") & str.endsWith("одной")));
+        System.out.println("Седьмой символ строки "+str.charAt(6));
+        System.out.println("Индекс первого вхождения подстроки \"одной\" в строку "+str.indexOf("одной"));
+        System.out.println("Индекс последнего вхождения подстроки \"одной\" в строку  "+str.lastIndexOf("одной"));
     }
 }
